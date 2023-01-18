@@ -1,0 +1,224 @@
+time="2022-12-26T18:15:10+08:00" level=info msg="init logger successful" file="init.go:49" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:10+08:00" level=info msg="current user 1000:1000" file="init.go:51" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:10+08:00" level=info msg="report event InitStart success" file="event.go:54" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:10+08:00" level=info msg="init command: bash /home/ma-user/training/init.sh 's3://jaes/lenet5/'" file="init.go:75" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:10+08:00" level=info msg="scc is already installed, skipping this step..." Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:10+08:00" level=info msg="[init] toolkit_obs_upload_pid = 55" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:10+08:00" level=info msg="[init] running at 2022-12-26-18:15:10" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:10+08:00" level=info msg="[init] ip of the pod: 172.16.0.154" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:10+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:193" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2022-12-26T18:15:10+08:00" level=info msg="obs dir = s3://modelarts-training-log-cn-north-4/ffc46844-4a2d-4fec-8bea-34cb79fc7320/worker-0" file="upload.go:196" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2022-12-26T18:15:10+08:00" level=info msg="start the periodic upload task, upload Period = 5 seconds " file="upload.go:206" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2022-12-26T18:15:10+08:00" level=info msg="[task]Detect item: disk-size shm" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:11+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size shm" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:11+08:00" level=info msg="[task]Detect item: dns" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:16+08:00" level=info msg="[detect] code: 0, message: ok, item: dns" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:16+08:00" level=info msg="[task]Detect item: disk-size root" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:17+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size root" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:17+08:00" level=info msg="[task]Detect item: disk-size cache" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:18+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size cache" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:18+08:00" level=info msg="report event DetectFinish success" file="event.go:54" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:18+08:00" level=info msg="[init] autosearch_path is empty, skip the autosearch download" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:18+08:00" level=info msg="[init] start to download the code" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:18+08:00" level=info msg="[init] code_url: s3://jaes/lenet5/" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:18+08:00" level=info msg="[init] modelarts_downloader_job_pid = 265" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:19+08:00" level=info msg="Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://jaes/lenet5/', trace=False, type='common', verbose=False)" Component=PythonScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:20+08:00" level=info msg="[init] code is now in /home/ma-user/modelarts/user-job-dir" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:20+08:00" level=info msg="[init] download the code use 2s" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:20+08:00" level=info msg="report event DownloadCodeSuccess success" file="event.go:54" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:20+08:00" level=info msg="[init] record_dir is empty, skip the code upload" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:20+08:00" level=info msg="[init] inputs_handler_job_pid = 385" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:21+08:00" level=info msg="caching the content of [data_url] inputs" Component=PythonScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:22+08:00" level=info msg="Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=True, src='s3://jaes/lenet5/MNIST/', trace=False, type='common', verbose=False)" Component=PythonScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:23+08:00" level=info msg="cache the content of [data_url] inputs successfully" Component=PythonScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:23+08:00" level=info msg="it can be accessed at local dir [/home/ma-user/modelarts/inputs/data_url_0]" Component=PythonScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:23+08:00" level=info msg="report event DownloadInputSuccess success" file="event.go:54" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:24+08:00" level=info msg="mkdir for local output dir" Component=PythonScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:24+08:00" level=info msg="output-handler finalized" Component=PythonScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:24+08:00" level=info msg="[init] exiting at 2022-12-26-18:15:24" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:24+08:00" level=info msg="[init] upload_metrics_pid = 630" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:26+08:00" level=info msg="[init] stop toolkit_obs_upload_pid = 55 by signal SIGTERM" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:26+08:00" level=info msg="the periodic upload task exiting..." file="upload.go:216" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2022-12-26T18:15:26+08:00" level=info msg="[init] toolkit_obs_upload 55 ret_code is 0" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:26+08:00" level=info msg="[init] exit with 0" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:26+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:193" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2022-12-26T18:15:26+08:00" level=info msg="obs dir = s3://modelarts-training-log-cn-north-4/ffc46844-4a2d-4fec-8bea-34cb79fc7320/worker-0" file="upload.go:196" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2022-12-26T18:15:26+08:00" level=info msg="report event InitExit success" file="event.go:54" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:26+08:00" level=info msg="bootstrap is exiting with exit code 0" file="bootstrap.go:241" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:29+08:00" level=info msg="init logger successful" file="run_train.go:86" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:29+08:00" level=info msg="Waiting for SCC server start." file="run_train.go:439" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="init logger successful" file="upload.go:39" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="current user 1000:1000" file="upload.go:41" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="report event SidecarStart success" file="event.go:54" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="upload command: /home/ma-user/training/sidecar.sh" file="upload.go:57" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="scc is already installed, skipping this step..." Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="[sidecar] running at 2022-12-26-18:15:30" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="[sidecar] toolkit_obs_upload_by_channels_pid = 52" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="[sidecar] waiting for training complete" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="[sidecar] scc server pid = 60" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:30+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:193" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2022-12-26T18:15:30+08:00" level=info msg="obs dir = s3://modelarts-training-log-cn-north-4/ffc46844-4a2d-4fec-8bea-34cb79fc7320/worker-0" file="upload.go:196" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2022-12-26T18:15:30+08:00" level=info msg="enable append upload mode" file="upload.go:199" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2022-12-26T18:15:30+08:00" level=info msg="start the periodic upload task, upload Period = 5 seconds " file="upload.go:206" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2022-12-26T18:15:31+08:00" level=info msg="Starting SCC server on 127.0.0.1:56124" file="server.go:53" Command=scc-server Component=ma-scc-server Platform=ModelArts-Service
+time="2022-12-26T18:15:31+08:00" level=info msg="local dir = /home/ma-user/modelarts/outputs/train_url_0/" file="upload.go:193" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2022-12-26T18:15:31+08:00" level=info msg="obs dir = s3://jaes/lenet5/output/" file="upload.go:196" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2022-12-26T18:15:31+08:00" level=info msg="start the periodic upload task, upload Period = 30 seconds " file="upload.go:206" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2022-12-26T18:15:31+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:193" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2022-12-26T18:15:31+08:00" level=info msg="obs dir = obs://jaes/lenet5/log/" file="upload.go:196" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2022-12-26T18:15:31+08:00" level=info msg="start the periodic upload task, upload Period = 30 seconds " file="upload.go:206" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2022-12-26T18:15:34+08:00" level=info msg="SCC server has been init, training continue." file="run_train.go:457" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=warning msg="AscendDMIExecutor create failed, error: ascend-dmi is not found in the /usr/local/Ascend/toolbox path, skip this detect step" file="ascend_check.go:77" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="report event DetectFinish success" file="event.go:54" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="report event TrainingStart success" file="event.go:54" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="Skip hang detect" file="run_train.go:474" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="pre train command: /modelarts-job-ffc46844-4a2d-4fec-8bea-34cb79fc7320/ma-training-toolkit detect image-check; mkdir -p ~/.pip; echo -e '[global]\\ntrusted-host = repo.myhuaweicloud.com\\nindex-url = http://repo.myhuaweicloud.com/repository/pypi/simple/' > ~/.pip/pip.conf;  " file="run_train.go:510" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="runUser name: ma-user" file="image_check.go:54" Command=image-check Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="runUser uid: 1000" file="image_check.go:55" Command=image-check Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="runUser gid: 100" file="image_check.go:56" Command=image-check Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="run command: bash /home/ma-user/modelarts/run/run_train_v2.sh '/home/ma-user/modelarts/user-job-dir/lenet5/main.py' " file="run_train.go:324" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="zombie process cleaner is start running, childPid=36" file="cleaner_unix.go:31" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="user: uid=1000(ma-user) gid=100(ma-group) groups=100(ma-group),10000(HwHiAiUser)" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="pwd: /home/ma-user" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="boot_file: /home/ma-user/modelarts/user-job-dir/lenet5/main.py" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="command: /home/ma-user/modelarts/user-job-dir/lenet5/main.py" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="local_code_dir: /home/ma-user/modelarts/user-job-dir/lenet5" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:34+08:00" level=info msg="training start at 2022-12-26-18:15:34" Component=ShellScripts Platform=ModelArts-Service
+[ModelArts Service Log]install modelarts training system python packages
+[ModelArts Service Log]engine type is: ascend-powered-engine
+[ModelArts Service Log]python version: 3
+[ModelArts Service Log]package directory: /home/ma-user/modelarts/package
+Found existing installation: moxing-framework 2.0.1.rc0.ffd1c0c8
+Uninstalling moxing-framework-2.0.1.rc0.ffd1c0c8:
+  Successfully uninstalled moxing-framework-2.0.1.rc0.ffd1c0c8
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Processing ./moxing_framework-2.1.0.81519f29-py2.py3-none-any.whl
+Requirement already satisfied: lxml>=4.1.0 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (4.4.2)
+Requirement already satisfied: lazy-import>=0.2.2 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (0.2.2)
+Requirement already satisfied: six in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (1.16.0)
+Requirement already satisfied: urllib3>=1.26.2 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (1.26.10)
+Requirement already satisfied: psutil>=5.4.6 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (5.7.0)
+Requirement already satisfied: scipy>=1.1.0 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (1.5.4)
+Requirement already satisfied: certifi in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (2022.6.15)
+Requirement already satisfied: Pillow>=3.3.1 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (9.2.0)
+Requirement already satisfied: PyYAML>=3.12 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (5.3.1)
+Collecting protobuf<4,>=3.10.0
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/2a/7c/e7091f0eea6eec70547d28c6c0d8c7335ee58f6b13456608beec8c94a62a/protobuf-3.20.3-cp37-cp37m-manylinux2014_aarch64.whl (917 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 917.9/917.9 kB 18.4 MB/s eta 0:00:00
+Requirement already satisfied: setuptools in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (63.1.0)
+Requirement already satisfied: numpy>=1.16.4 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (1.21.2)
+Requirement already satisfied: pathlib2>=2.3.0 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.0.81519f29) (2.3.7.post1)
+Installing collected packages: protobuf, moxing-framework
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 4.21.2
+    Uninstalling protobuf-4.21.2:
+      Successfully uninstalled protobuf-4.21.2
+Successfully installed moxing-framework-2.1.0.81519f29 protobuf-3.20.3
+
+[notice] A new release of pip available: 22.1.2 -> 22.3.1
+[notice] To update, run: pip install --upgrade pip
+time="2022-12-26T18:15:40+08:00" level=info msg="the current core file size limit is 5242880" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:40+08:00" level=warning msg="current core_pattern is  |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e , the format is incorrect, skip core file collection" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:40+08:00" level=info msg="current running count is 1, max running count is 1" file="controller.go:163" Args="[/home/ma-user/anaconda/bin/python /home/ma-user/modelarts/run/davincirun.py /home/ma-user/anaconda/bin/python /home/ma-user/modelarts/user-job-dir/lenet5/main.py]" Command=run-with-backoff Component=ma-training-toolkit Platform=ModelArts-Service TaskID=worker-0
+INFO:root:Using MoXing-v2.1.0.81519f29-81519f29
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log]2022-12-26 18:15:40,968 - INFO - Ascend Driver: Version=22.0.0.3
+[ModelArts Service Log]2022-12-26 18:15:40,969 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[ModelArts Service Log]2022-12-26 18:15:40,969 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[ModelArts Service Log]2022-12-26 18:15:40,969 - INFO - Davinci training command
+[ModelArts Service Log]2022-12-26 18:15:40,969 - INFO - ['/home/ma-user/anaconda/bin/python', '/home/ma-user/modelarts/user-job-dir/lenet5/main.py']
+[ModelArts Service Log]2022-12-26 18:15:40,970 - INFO - Wait for Rank table file ready
+[ModelArts Service Log]2022-12-26 18:15:40,970 - INFO - Rank table file (K8S generated) is ready for read
+[ModelArts Service Log]2022-12-26 18:15:40,970 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "worker",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "ma-job-ffc46844-4a2d-4fec-8bea-34cb79fc7320-worker-0",
+                    "server_id": "192.168.0.163",
+                    "devices": [
+                        {
+                            "device_id": "5",
+                            "device_ip": "192.2.83.28"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[ModelArts Service Log]2022-12-26 18:15:40,971 - INFO - Rank table file (V1)
+[ModelArts Service Log]2022-12-26 18:15:40,971 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.163",
+            "device": [
+                {
+                    "device_id": "5",
+                    "device_ip": "192.2.83.28",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[ModelArts Service Log]2022-12-26 18:15:40,971 - INFO - Rank table file (V1) is generated
+[ModelArts Service Log]2022-12-26 18:15:40,971 - INFO - Current server
+[ModelArts Service Log]2022-12-26 18:15:40,972 - INFO - 
+{
+    "server_id": "192.168.0.163",
+    "device": [
+        {
+            "device_id": "5",
+            "device_ip": "192.2.83.28",
+            "rank_id": "0"
+        }
+    ]
+}
+[ModelArts Service Log]2022-12-26 18:15:40,972 - INFO - Route plan ends for env ROUTE_PLAN = false. Route plan acceleration service may not be available in this region
+[ModelArts Service Log]2022-12-26 18:15:40,972 - INFO - The environment variable MA_TERMINATION_GRACE_PERIOD_SECONDS is set to 30, exponential backoff times will be set to 5
+[ModelArts Service Log]2022-12-26 18:15:40,973 - INFO - bootstrap proc-rank-0-device-0
+[ModelArts Service Log]2022-12-26 18:15:40,982 - INFO - proc-rank-0-device-0 (pid: 175)
+Traceback (most recent call last):
+  File "/home/ma-user/modelarts/user-job-dir/lenet5/main.py", line 93, in <module>
+    train(data_path)
+  File "/home/ma-user/modelarts/user-job-dir/lenet5/main.py", line 58, in train
+    ds_train = create_dataset(data_dir)
+  File "/home/ma-user/modelarts/user-job-dir/lenet5/main.py", line 22, in create_dataset
+    ds = ms.dataset.MnistDataset(data_train if training else data_test)
+  File "/home/ma-user/anaconda/lib/python3.7/site-packages/mindspore/dataset/engine/validators.py", line 343, in new_method
+    check_dir(dataset_dir)
+  File "/home/ma-user/anaconda/lib/python3.7/site-packages/mindspore/dataset/core/validator_helpers.py", line 551, in check_dir
+    raise ValueError("The folder {} does not exist or is not a directory or permission denied!".format(dataset_dir))
+ValueError: The folder /home/ma-user/modelarts/user-job-dir/MNIST/train does not exist or is not a directory or permission denied!
+[ModelArts Service Log]2022-12-26 18:15:52,001 - ERROR - proc-rank-0-device-0 (pid: 175) has exited with non-zero code: 1
+[ModelArts Service Log]2022-12-26 18:15:52,001 - INFO - Begin destroy training processes
+[ModelArts Service Log]2022-12-26 18:15:52,001 - INFO - proc-rank-0-device-0 (pid: 175) has exited before receiving the term signal
+[ModelArts Service Log]2022-12-26 18:15:52,002 - INFO - End destroy training processes
+time="2022-12-26T18:15:52+08:00" level=info msg="python command is exit with 1" file="controller.go:180" Args="[/home/ma-user/anaconda/bin/python /home/ma-user/modelarts/run/davincirun.py /home/ma-user/anaconda/bin/python /home/ma-user/modelarts/user-job-dir/lenet5/main.py]" Command=run-with-backoff Component=ma-training-toolkit Platform=ModelArts-Service TaskID=worker-0
+time="2022-12-26T18:15:52+08:00" level=info msg="clean up child process succeed, pid=176, wstatus=0, exit_status=0" file="cleaner_unix.go:75" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="http Server goroutine is exit" file="server.go:59" Args="[/home/ma-user/anaconda/bin/python /home/ma-user/modelarts/run/davincirun.py /home/ma-user/anaconda/bin/python /home/ma-user/modelarts/user-job-dir/lenet5/main.py]" Command=run-with-backoff Component=ma-training-toolkit Platform=ModelArts-Service TaskID=worker-0
+time="2022-12-26T18:15:52+08:00" level=info msg="run-with-backoff exit with 1" file="controller.go:158" Args="[/home/ma-user/anaconda/bin/python /home/ma-user/modelarts/run/davincirun.py /home/ma-user/anaconda/bin/python /home/ma-user/modelarts/user-job-dir/lenet5/main.py]" Command=run-with-backoff Component=ma-training-toolkit Platform=ModelArts-Service TaskID=worker-0
+time="2022-12-26T18:15:52+08:00" level=info msg="the run_train script is exiting..." Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="the run_train script is exited with 1" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="the post-training script(ma-post-end.sh) is not found in the directory where the bootfile is located, skipping execution" file="run_train.go:554" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="report event TrainingExit success" file="event.go:54" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=error msg="bootstrap is exiting with exit code 1" file="bootstrap.go:243" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="retCode 1 has been written to the retCode file /home/ma-user/modelarts/retCode" file="bootstrap.go:221" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="[sidecar] training is completed" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="[sidecar] the reason for the failure of the training job is under analysis" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=warning msg="the log-preview-size parameter exceeds the limit and will be set to the default value 5242880" file="cli.go:203" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="[sidecar] stop toolkit_obs_upload_by_channels_pid = 52 by signal SIGTERM" Component=ShellScripts Platform=ModelArts-Service
+time="2022-12-26T18:15:52+08:00" level=info msg="the periodic upload task exiting..." file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2022-12-26T18:15:52+08:00" level=info msg="the periodic upload task exiting..." file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2022-12-26T18:15:52+08:00" level=info msg="the periodic upload task exiting..." file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url

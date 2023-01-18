@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/ma-user/modelarts/user-job-dir/lenet5/main.py", line 93, in <module>
+    train(data_path)
+  File "/home/ma-user/modelarts/user-job-dir/lenet5/main.py", line 58, in train
+    ds_train = create_dataset(data_dir)
+  File "/home/ma-user/modelarts/user-job-dir/lenet5/main.py", line 22, in create_dataset
+    ds = ms.dataset.MnistDataset(data_train if training else data_test)
+  File "/home/ma-user/anaconda/lib/python3.7/site-packages/mindspore/dataset/engine/validators.py", line 343, in new_method
+    check_dir(dataset_dir)
+  File "/home/ma-user/anaconda/lib/python3.7/site-packages/mindspore/dataset/core/validator_helpers.py", line 551, in check_dir
+    raise ValueError("The folder {} does not exist or is not a directory or permission denied!".format(dataset_dir))
+ValueError: The folder /home/ma-user/modelarts/user-job-dir/MNIST/train does not exist or is not a directory or permission denied!
